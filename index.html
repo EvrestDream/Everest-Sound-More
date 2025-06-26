@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Everest Sound&More | Event DJ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <style>
+    :root {
+      --main-color: #ff007f;
+      --bg-dark: #111;
+      --text-light: #fff;
+      --text-muted: #aaa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+    }
+
+    header {
+      height: 100vh;
+      background: url('hero.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      color: var(--main-color);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin: 20px 0;
+    }
+
+    header a {
+      padding: 14px 32px;
+      background: var(--main-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+
+    .about, .services, .contact, .booking {
+      background: #1e1e1e;
+      border-radius: 10px;
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      padding: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 166px;
+      border: none;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background: #333;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    form button {
+      background: var(--main-color);
+      padding: 12px 30px;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1 data-aos="fade-down">Everest Sound&More</h1>
+    <p data-aos="fade-up">Igniting Every Event with Unmatched Energy</p>
+    <a href="#booking" data-aos="fade-up">Book Now</a>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about" data-aos="fade-right">
+    <h2>About Us</h2>
+    <p>Welcome to Everest Sound&More – where premium sound meets unforgettable vibes. With years of professional experience, we bring music, lighting, and good times to every occasion.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services" data-aos="fade-left">
+    <h2>Services</h2>
+    <ul>
+      <li>🎧 Wedding & Private Event DJing</li>
+      <li>📀 Pro Sound & Light Systems</li>
+      <li>🎤 Live MC & Hosting</li>
+      <li>🌐 Virtual Event Streaming</li>
+    </ul>
+  </section>
+
+  <!-- Music Embed -->
+  <section id="music" data-aos="zoom-in">
+    <h2>Our Sound</h2>
+    <iframe scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/your-track&color=%23ff007f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+    </iframe>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Event 1" />
+      <img src="gallery2.jpg" alt="Event 2" />
+      <img src="gallery3.jpg" alt="Event 3" />
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking" id="booking" data-aos="fade-up">
+    <h2>Book Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Event Date" required />
+      <textarea rows="5" placeholder="Event Details"></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:everestsound@example.com" style="color:var(--main-color);">everestsound@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/everestsound" target="_blank" style="color:var(--main-color);">@everestsound</a></p>
+    <p>Phone: +1 555-123-4567</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Everest Sound&More. Made with 🎶
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+
+</body>
+</html>
